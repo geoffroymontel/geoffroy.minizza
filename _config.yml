@@ -13,16 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+locale: "fr-FR"
+title: Geoffroy Montel
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+twitter_username: g_montel
+github_username: geoffroymontel
 minimal_mistakes_skin: default
 search: true
+
 
 # Build settings
 markdown: kramdown
@@ -31,10 +33,11 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Paris
 
 include:
   - _pages
+  - _data
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -58,34 +61,37 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Geoffroy Montel"
+  avatar : "/assets/images/geoffroy-montel.jpg"
+  bio    : ""
   links:
-    - label: "Website"
+    - label: "Brocoli"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "http://www.brocoli.org"
+    - label: "Bandcamp"
+      icon: "fa-brands fa-bandcamp"
+      url: "https://geoffroymontel.bandcamp.com/"
+    - label: "Facebook"
+      icon: "fa-brands fa-facebook"
+      url: "https://www.facebook.com/geoffroy.montel"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/geoffroymontel"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "Brocoli"
+      icon: "fas fa-fw fa-link"
+      url: "http://www.brocoli.org"
+    - label: "Bandcamp"
+      icon: "fa-brands fa-bandcamp"
+      url: "https://geoffroymontel.bandcamp.com/"
+    - label: "Facebook"
+      icon: "fa-brands fa-facebook"
+      url: "https://www.facebook.com/geoffroy.montel"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/geoffroymontel"
 
 defaults:
   # _posts
